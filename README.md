@@ -1,1 +1,0 @@
-# worker_activity_tracking_mediapipe
