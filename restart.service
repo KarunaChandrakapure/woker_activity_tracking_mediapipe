@@ -1,0 +1,13 @@
+[Unit]
+Description=Restart Activity Monitoring
+After=network.target
+
+[Service]
+WorkingDirectory=/home/karuna/Desktop/activity_tracking_assignment
+ExecStart=/usr/bin/python3 activity_tracking_main.py
+Restart=always
+RestartSec=10
+User=itc
+
+[Install]
+WantedBy=multi-user.target
